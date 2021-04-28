@@ -2,7 +2,7 @@ const md5 = require('md5');
 const express = require('express');
 
 const app = express();
-const port = 8080;
+const port = 80;
 
 app.get('/hash/:input', function (req, res) {
     let input = req.params.input;
