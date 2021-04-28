@@ -2,7 +2,7 @@ const md5 = require('md5');
 const express = require('express');
 
 const app = express();
-const port = 80;
+const port = 8080;
 
 app.get('/hash/:input', function (req, res) {
     let input = req.params.input;
@@ -14,6 +14,12 @@ app.get('/hash/:input', function (req, res) {
         }
     }
     res.status(200).send(data);
+})
+
+app.get('/hello', function (req, res) {
+
+    res.status(200).send('hello')
+
 })
 
 const getMD5Digest = (input) => {
