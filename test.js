@@ -2,14 +2,14 @@ const md5 = require('md5');
 const express = require('express');
 const fs = require('fs');
 const app = express();
-const port = 80;
+const port = 8080;
 
-app.use(express.static('public'));
+app.use('/', express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
     fs.readFile('./public/test.html', function (error, data) {
         res.writeHead(200, {'Content-Type': 'text/html'});
-        res.send(data);
+        res.end(data);
     })
 })
 app.get('/hash/:input', function (req, res) {
