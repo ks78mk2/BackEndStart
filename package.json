@@ -1,0 +1,25 @@
+{
+  "name": "class101",
+  "version": "1.0.0",
+  "description": "극단적인 CPU 사용 코드",
+  "main": "test.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "md5": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start" : "node test.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ks78mk2/BackEndStart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ks78mk2/BackEndStart/issues"
+  },
+  "homepage": "https://github.com/ks78mk2/BackEndStart#readme"
+}
