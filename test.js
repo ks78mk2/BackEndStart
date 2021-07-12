@@ -4,6 +4,11 @@ const fs = require('fs');
 const app = express();
 const port = 8080;
 
+app.use((req, res, next) => {
+    res.set('Cache-Control', 'no-store')
+    next()
+})
+
 app.use('/', express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
